@@ -6,9 +6,9 @@
 
 // al click del bottone crea calocolo il prezzo del biglietto
 
-var creaBtn = document.getElementById("btnCrea");
+var btn = document.getElementById("btnCrea");
 
-creaBtn.addEventListener("click", function () {
+btn.addEventListener("click", function () {
 
   var nome = document.getElementById("nome").value;
   var cognome = document.getElementById("cognome").value;
@@ -45,14 +45,12 @@ creaBtn.addEventListener("click", function () {
 
   var numeroTreno = Math.floor(Math.random() * (numMaxtreno - numMinTreno +1)) + numMinTreno;
 
-
   // creo in modo random il numero della carrozza del treno
 
   var numMaxcarrozza = 12;
   var numMincarrozza = 1;
 
   var numeroCarrozza = Math.floor(Math.random() * (numMaxcarrozza - numMincarrozza +1)) + numMincarrozza;
-
 
   // Autput per l'utente
 
@@ -75,9 +73,9 @@ creaBtn.addEventListener("click", function () {
 
 // al click del bottone annulla elimino tutti i dati inseriti
 
-var creaBtn = document.getElementById("btnAnnulla");
+btn = document.getElementById("btnAnnulla");
 
-creaBtn.addEventListener("click", function () {
+btn.addEventListener("click", function () {
 
   var nome = document.getElementById("nome").value = "";
   var cognome = document.getElementById("cognome").value = "";
