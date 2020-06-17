@@ -48,7 +48,7 @@ creaBtn.addEventListener("click", function () {
 
   // creo in modo random il numero della carrozza del treno
 
-  var numMaxcarrozza = 14;
+  var numMaxcarrozza = 12;
   var numMincarrozza = 1;
 
   var numeroCarrozza = Math.floor(Math.random() * (numMaxcarrozza - numMincarrozza +1)) + numMincarrozza;
@@ -66,7 +66,8 @@ creaBtn.addEventListener("click", function () {
 
   document.getElementById('categoriaUtente').innerHTML = eta;
 
-  // creo una classe per far vedere i dati nascosti
+  // creo una classe per far vedere i dati nascosti e sovrascivo
+  // la classe creata in html (.biglietto)
 
   document.getElementById('bigliettoTreno').className = "bigliettoVisibile";
 
@@ -78,13 +79,13 @@ var creaBtn = document.getElementById("btnAnnulla");
 
 creaBtn.addEventListener("click", function () {
 
-  var nome = document.getElementById("nome").value = "Nome";
-  var cognome = document.getElementById("cognome").value = "Cognome";
-  var km = document.getElementById("km").value = " ";
+  var nome = document.getElementById("nome").value = "";
+  var cognome = document.getElementById("cognome").value = "";
+  var km = document.getElementById("km").value = "";
   var eta = document.getElementById("categoria").value = "Maggiorenne";
 
   // reinserisco la classe creata in html (.biglietto) e
-  // tolgo la classe creata con js(.bigliettoVisibile)
+  // sovrascivo la classe creata con js (.bigliettoVisibile)
 
   document.getElementById('bigliettoTreno').className = "biglietto";
 
